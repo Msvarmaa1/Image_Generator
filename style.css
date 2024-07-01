@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" );
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+.image-generator{
+    height: 60vh;
+    background: url(Gen\ img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-generator::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background: black;
+}
+.image-generator .content{
+    color: white;
+    padding: 0 15px;
+    max-width: 860px;
+    text-align: center;
+    position: relative;
+}
+
+.image-generator h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.image-generator p{
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.image-generator .generate-form{
+    height: 56px;
+    width: 100%;
+    display: flex;
+    padding: 6px;
+    margin: 45px 0 15px;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.generate-form .prompt-input{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0 17px;
+}
+.generate-form .controls{
+    display: flex;
+    height: 100%;
+    gap: 15px;
+}
+
+
